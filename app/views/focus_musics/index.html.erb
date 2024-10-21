@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Focus musics" %>
+
+<h1>Focus musics</h1>
+
+<div id="focus_musics">
+  <% @focus_musics.each do |focus_music| %>
+    <%= render focus_music %>
+    <p>
+      <%= link_to "Show this focus music", focus_music %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New focus music", new_focus_music_path %>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing stopwatch" %>
+
+<h1>Editing stopwatch</h1>
+
+<%= render "form", stopwatch: @stopwatch %>
+
+<br>
+
+<div>
+  <%= link_to "Show this stopwatch", @stopwatch %> |
+  <%= link_to "Back to stopwatches", stopwatches_path %>
+</div>

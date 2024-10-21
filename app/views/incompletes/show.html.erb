@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @incomplete %>
+
+<div>
+  <%= link_to "Edit this incomplete", edit_incomplete_path(@incomplete) %> |
+  <%= link_to "Back to incompletes", incompletes_path %>
+
+  <%= button_to "Destroy this incomplete", @incomplete, method: :delete %>
+</div>

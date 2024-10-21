@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @focus_music %>
+
+<div>
+  <%= link_to "Edit this focus music", edit_focus_music_path(@focus_music) %> |
+  <%= link_to "Back to focus musics", focus_musics_path %>
+
+  <%= button_to "Destroy this focus music", @focus_music, method: :delete %>
+</div>

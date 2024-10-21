@@ -1,0 +1,32 @@
+<%= form_with(model: stopwatch) do |form| %>
+  <% if stopwatch.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(stopwatch.errors.count, "error") %> prohibited this stopwatch from being saved:</h2>
+
+      <ul>
+        <% stopwatch.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :started_at, style: "display: block" %>
+    <%= form.datetime_field :started_at %>
+  </div>
+
+  <div>
+    <%= form.label :completed_at, style: "display: block" %>
+    <%= form.datetime_field :completed_at %>
+  </div>
+
+  <div>
+    <%= form.label :duration, style: "display: block" %>
+    <%= form.number_field :duration %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

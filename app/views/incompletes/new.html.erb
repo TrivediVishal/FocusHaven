@@ -1,0 +1,11 @@
+<% content_for :title, "New incomplete" %>
+
+<h1>New incomplete</h1>
+
+<%= render "form", incomplete: @incomplete %>
+
+<br>
+
+<div>
+  <%= link_to "Back to incompletes", incompletes_path %>
+</div>

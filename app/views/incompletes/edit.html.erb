@@ -1,0 +1,12 @@
+<% content_for :title, "Editing incomplete" %>
+
+<h1>Editing incomplete</h1>
+
+<%= render "form", incomplete: @incomplete %>
+
+<br>
+
+<div>
+  <%= link_to "Show this incomplete", @incomplete %> |
+  <%= link_to "Back to incompletes", incompletes_path %>
+</div>

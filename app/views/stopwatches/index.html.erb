@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Stopwatches" %>
+
+<h1>Stopwatches</h1>
+
+<div id="stopwatches">
+  <% @stopwatches.each do |stopwatch| %>
+    <%= render stopwatch %>
+    <p>
+      <%= link_to "Show this stopwatch", stopwatch %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stopwatch", new_stopwatch_path %>

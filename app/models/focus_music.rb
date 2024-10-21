@@ -1,0 +1,2 @@
+class FocusMusic < ApplicationRecord
+end

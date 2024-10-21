@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Incompletes" %>
+
+<h1>Incompletes</h1>
+
+<div id="incompletes">
+  <% @incompletes.each do |incomplete| %>
+    <%= render incomplete %>
+    <p>
+      <%= link_to "Show this incomplete", incomplete %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New incomplete", new_incomplete_path %>
